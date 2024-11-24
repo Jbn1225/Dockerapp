@@ -63,4 +63,4 @@ stages:
                 docker pull $(imageName):$(Build.BuildId)
                 docker run -d --name $(containerName) -p 80:80 $(imageName):$(Build.BuildId)
               EOF
-            displayName: 'Deploy Docker Container to AWS Docker Application EC4'
+            displayName: 'Deploy Docker Container to AWS Docker Application EC2'
